@@ -1,3 +1,8 @@
-/**
- * Created by you on 16-4-19.
- */
+function printLcdDisplay (inputs) {
+    var newInputs = stringSplit(inputs);
+}
+
+function stringSplit(inputs) {
+    var newInputs = inputs.split('');
+    return newInputs;
+}
