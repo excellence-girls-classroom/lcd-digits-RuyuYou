@@ -11,15 +11,19 @@ function stringSplit(inputs) {
     return newInputs;
 }
 
+function findItem (newInput , allItems) {
+    for (var j=0; j<allItems.length; j++) {
+        if (newInput === allItems[j].number) {
+            return { number:allItems[j].number ,lcd:allItems[j].lcd };
+        }
+    }
+}
+
 function buildItems(newInputs , allItems) {
     var items = [];
 
     for (var i=0; i<newInputs.length; i++) {
-        for (var j=0; j<allItems.length; j++) {
-            if (newInputs[i] === allItems[j].number) {
-                items.push ({ number:allItems[j].number ,lcd:allItems[j].lcd });
-            }
-        }
+        items.push (findItem(newInputs[i] , allItems));
     }
     return items;
 }
