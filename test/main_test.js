@@ -19,4 +19,42 @@ describe('Unit Test',function () {
         });
     });
 
+    describe('buildItems()',function () {
+        it ('should print correct Items',function () {
+            var inputs = [
+                '9',
+                '1',
+                '0'
+            ];
+            var items = buildItems (inputs,allItems);
+            var expectItems = [
+                {
+                    number:'9',
+                    lcd :[
+                        '._.',
+                        '|_|',
+                        '..|'
+                    ]
+                },
+                {
+                    number:'1',
+                    lcd :[
+                        '...',
+                        '..|',
+                        '..|'
+                    ]
+                },
+                {
+                    number:'0',
+                    lcd :[
+                        '._.',
+                        '|.|',
+                        '|_|'
+                    ]
+                }
+            ];
+            expect(items).toEqual(expectItems);
+        });
+    });
+
 });
