@@ -1,53 +1,86 @@
 function loadAllItems() {
   return [
     {
-      barcode: 'ITEM000000',
-      name: '可口可乐',
-      unit: '瓶',
-      price: 3.00
+      number: 0,
+      lcd :[
+          '._.',
+          '|.|',
+          '|_|'
+      ]
     },
     {
-      barcode: 'ITEM000001',
-      name: '雪碧',
-      unit: '瓶',
-      price: 3.00
+      number: 1,
+      lcd :[
+          '...',
+          '..|',
+          '..|'
+      ]
     },
     {
-      barcode: 'ITEM000002',
-      name: '苹果',
-      unit: '斤',
-      price: 5.50
+      number: 2,
+      lcd :[
+          '._.',
+          '._|',
+          '|_.'
+      ]
     },
     {
-      barcode: 'ITEM000003',
-      name: '荔枝',
-      unit: '斤',
-      price: 15.00
+      number: 3,
+      lcd :[
+          '._.',
+          '._|',
+          '._|'
+      ]
     },
     {
-      barcode: 'ITEM000004',
-      name: '电池',
-      unit: '个',
-      price: 2.00
+      number: 4,
+      lcd :[
+          '...',
+          '|_|',
+          '..|'
+      ]
     },
     {
-      barcode: 'ITEM000005',
-      name: '方便面',
-      unit: '袋',
-      price: 4.50
-    }
-  ];
-}
-
-function loadPromotions() {
-  return [
+      number: 5,
+      lcd :[
+          '._.',
+          '|_.',
+          '._|'
+      ]
+    },
     {
-      type: 'BUY_TWO_GET_ONE_FREE',
-      barcodes: [
-        'ITEM000000',
-        'ITEM000001',
-        'ITEM000005'
+      number: 6,
+      lcd :[
+          '._.',
+          '|_.',
+          '|_|'
+      ]
+    },
+    {
+      number: 7,
+      lcd :[
+          '._.',
+          '..|',
+          '..|'
+      ]
+    },
+    {
+      number: 8,
+      lcd :[
+          '._.',
+          '|_|',
+          '|_|'
+      ]
+    },
+    {
+      number: 9,
+      lcd :[
+          '._.',
+          '|_|',
+          '..|'
       ]
     }
   ];
 }
+
+
