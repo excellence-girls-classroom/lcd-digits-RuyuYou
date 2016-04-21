@@ -93,6 +93,30 @@ describe('Unit Test',function () {
                 '..| ..| |_| \n';
             expect(display).toEqual(expectDisplay);
         });
+
     });
 
+});
+
+
+describe('Integration Test',function () {
+    var allItems;
+    var inputs;
+    beforeEach(function () {
+        allItems = loadAllItems();
+        inputs = "910";
+    });
+
+    it ('should print correct LCDdisplay',function () {
+        spyOn(console, 'log');
+
+        printLcdDisplay (inputs);
+        var expectDisplay =
+            '...\n'+
+            '._. ... ._. \n'+
+            '|_| ..| |.| \n'+
+            '..| ..| |_| \n';
+        expect(console.log).toHaveBeenCalledWith(expectDisplay);
+    });
+    
 });
