@@ -88,9 +88,9 @@ describe('Unit Test',function () {
             var display =buildPrintDisplay (inputItems);
             var expectDisplay =
                 '...\n'+
-                '._. ... ._.\n'+
-                '|_| ..| |.|\n'+
-                '..| ..| |_|\n';
+                '._. ... ._. \n'+
+                '|_| ..| |.| \n'+
+                '..| ..| |_| \n';
             expect(display).toEqual(expectDisplay);
         });
     });
