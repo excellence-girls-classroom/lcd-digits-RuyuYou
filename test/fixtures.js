@@ -1,7 +1,7 @@
 function loadAllItems() {
   return [
     {
-      number: 0,
+      number: '0',
       lcd :[
           '._.',
           '|.|',
@@ -9,7 +9,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 1,
+      number: '1',
       lcd :[
           '...',
           '..|',
@@ -17,7 +17,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 2,
+      number: '2',
       lcd :[
           '._.',
           '._|',
@@ -25,7 +25,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 3,
+      number: '3',
       lcd :[
           '._.',
           '._|',
@@ -33,7 +33,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 4,
+      number: '4',
       lcd :[
           '...',
           '|_|',
@@ -41,7 +41,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 5,
+      number: '5',
       lcd :[
           '._.',
           '|_.',
@@ -49,7 +49,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 6,
+      number: '6',
       lcd :[
           '._.',
           '|_.',
@@ -57,7 +57,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 7,
+      number: '7',
       lcd :[
           '._.',
           '..|',
@@ -65,7 +65,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 8,
+      number: '8',
       lcd :[
           '._.',
           '|_|',
@@ -73,7 +73,7 @@ function loadAllItems() {
       ]
     },
     {
-      number: 9,
+      number: '9',
       lcd :[
           '._.',
           '|_|',
