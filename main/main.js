@@ -1,7 +1,6 @@
 function printLcdDisplay (inputs) {
-    var allItems = loadAllItems();
+    var allItenms = loadAllItems();
     var newInputs = stringSplit(inputs);
-    console.log (allItems);
     var items = buildItems(newInputs , allItenms);
 }
 
