@@ -57,4 +57,42 @@ describe('Unit Test',function () {
         });
     });
 
+    describe('buildPrintDisplay()',function () {
+        it ('should print correct printLCD',function () {
+            var inputItems = [
+                {
+                    number:'9',
+                    lcd :[
+                        '._.',
+                        '|_|',
+                        '..|'
+                    ]
+                },
+                {
+                    number:'1',
+                    lcd :[
+                        '...',
+                        '..|',
+                        '..|'
+                    ]
+                },
+                {
+                    number:'0',
+                    lcd :[
+                        '._.',
+                        '|.|',
+                        '|_|'
+                    ]
+                }
+            ];
+            var display =buildPrintDisplay (inputItems);
+            var expectDisplay =
+                '...\n'+
+                '._. ... ._.\n'+
+                '|_| ..| |.|\n'+
+                '..| ..| |_|\n';
+            expect(display).toEqual(expectDisplay);
+        });
+    });
+
 });
